@@ -5,16 +5,16 @@ var adj = prompt('An adjective (beautiful, super, etc.)');
 var pastTense = prompt('A past tense verb (ran, burped, etc.)');
 var whichStory = prompt('Which story would you like?\na) Snacking\nb) Escaping\nc) Winning\n\nEnter the letter below:');
 
-var writeAStoryA = function (color, creature, adj, pastTense) {
+var writeAStoryA = function () {
   document.write('After snacking on ' + adj + ' treats, the ' + color + ' bellied ' + creature + ' ' + pastTense + ' for hours.');
 };
 
-var writeAStoryB = function (color, creature, adj, pastTense) {
-  document.write('Ameilia ' + pastTense + ' through the ' adj + ' ' + color + ' nebula escaping the space ' + creature + '.');
+var writeAStoryB = function () {
+  document.write('Ameilia ' + pastTense + ' through the ' + adj + ' ' + color + ' nebula escaping the space ' + creature + '.');
 };
 
-var writeAStoryC = function (color, creature, adj, pastTense) {
-  document.write('Jackson chose his ' + adj + ', ' + color + creature + ' card and ' + pastTense + ' it to the table knowing he won.');
+var writeAStoryC = function () {
+  document.write('Jackson chose his ' + adj + ', ' + color + ' ' + creature + ' card and ' + pastTense + ' it to the table knowing he won.');
 };
 
 if (whichStory === 'a') {
